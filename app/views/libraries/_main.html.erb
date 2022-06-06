@@ -1,0 +1,15 @@
+<main>
+  <%= render 'contents' %>
+  <% @libraries.each do |category, libraries| %>
+    <h2 id="<%= category.name %>"><%= category.name %></h2>
+    <p><%= category.description %></p>
+    <ul>
+      <% libraries.each do |library| %>
+        <li>
+          <%= link_to library.name, library.url %>
+           ⭐<%= library.stars %>, 📅<%= library.last_commit %> - <%= library.description %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</main>
