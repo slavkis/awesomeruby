@@ -1,0 +1,31 @@
+<header>
+  <h1>Awesome Ruby</h1>
+  <nav>
+    <ul>
+      <li>
+        <%= link_to "All", "/" %>
+      </li>
+      <li>
+        <%= link_to "≥10⭐", "/?min_stars=10" %>
+      </li>
+      <li>
+        <%= link_to "≥50⭐", "/?min_stars=50" %>
+      </li>
+      <li>
+        <%= link_to "≥100⭐", "/?min_stars=100" %>
+      </li>
+      <li>
+        <%= link_to "≥500⭐", "/?min_stars=500" %>
+      </li>
+      <li>
+        <%= link_to "≥1000🌟", "/?min_stars=1000" %>
+      </li>  
+    </ul>
+  </nav>
+  <p>
+    Ruby is awesome. And it has a vast awesome list: <%= link_to "awesome-ruby", "https://github.com/markets/awesome-ruby" %>.
+    This is a mirror of it where each library is marked with number of
+    stars at <%= link_to "Github", "https://github.com" %> and number of days since
+    the last commit.
+  </p>
+</header>
