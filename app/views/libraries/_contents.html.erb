@@ -1,6 +1,6 @@
 <h2>Contents</h2>
 <% @libraries.each do |category, libraries| %>
-  <ul>
-    <li><%= link_to category.name, "##{category.name}" %></li>
-  </ul>
+<ul>
+  <b><li><%= link_to category.name, "##{category.name.split(" ").join("-")}" %></li></b>
+</ul>
 <% end%>  

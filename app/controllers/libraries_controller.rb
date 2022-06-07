@@ -1,7 +1,7 @@
 class LibrariesController < ApplicationController
   def index
     @libraries = Library.all
-    # @categories = Category.all
+    @categories = Category.all
 
     if params[:min_stars]
       @libraries = @libraries.where(stars: (params[:min_stars].to_i..@libraries.maximum(:stars)))
