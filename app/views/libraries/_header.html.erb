@@ -1,26 +1,14 @@
 <header>
   <h1>Awesome Ruby</h1>
   <nav>
-    <ul>
-      <li>
-        <%= link_to "All", "/" %>
-      </li>
-      <li>
-        <%= link_to "≥10⭐", "/?min_stars=10" %>
-      </li>
-      <li>
-        <%= link_to "≥50⭐", "/?min_stars=50" %>
-      </li>
-      <li>
-        <%= link_to "≥100⭐", "/?min_stars=100" %>
-      </li>
-      <li>
-        <%= link_to "≥500⭐", "/?min_stars=500" %>
-      </li>
-      <li>
-        <%= link_to "≥1000🌟", "/?min_stars=1000" %>
-      </li>  
-    </ul>
+    <div class="my-4">
+      <%= link_to "All", "/", class: "btn btn-outline-primary" %>
+      <%= link_to "≥10⭐", "/?min_stars=10", class: "btn btn-outline-primary" %>
+      <%= link_to "≥50⭐", "/?min_stars=50", class: "btn btn-outline-primary" %>
+      <%= link_to "≥100⭐", "/?min_stars=100", class: "btn btn-outline-primary" %>
+      <%= link_to "≥500⭐", "/?min_stars=500", class: "btn btn-outline-primary" %>
+      <%= link_to "≥1000🌟", "/?min_stars=1000", class: "btn btn-outline-primary" %>
+    </div>
   </nav>
   <p>
     Ruby is awesome. And it has a vast awesome list: <%= link_to "awesome-ruby", "https://github.com/markets/awesome-ruby" %>.

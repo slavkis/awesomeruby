@@ -1,8 +1,7 @@
 <main>
   <%= render 'contents' %>
   <% @libraries.each do |category, libraries| %>
-    <h2 id="<%= category.name %>"><%= category.name %></h2>
-    <p><%= category.description %></p>
+    <h2 id="<%= category.name.split(" ").join("-") %>"><%= category.name %></h2>
     <ul>
       <% libraries.each do |library| %>
         <li>
