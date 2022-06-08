@@ -1,24 +1,15 @@
-# README
+# AWESOMERUBY TEST FOR 42.WORKS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tech
+* Ruby 3.0.3
+* Rails 7
+* pg 1.3.5
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Setup
+* ```git clone```
+* ```bundle install```
+* ```cp .env.example .env```
+*    Set your own token into .env
+* ```rails s```
+* ```sidekiq -C config/sidekiq.yml```
+* ```rake fetch```
