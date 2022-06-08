@@ -7,7 +7,7 @@ class LibrariesController < ApplicationController
       @libraries = @libraries.where(stars: (params[:min_stars].to_i..@libraries.maximum(:stars)))
     end
 
-    @libraries = @libraries.group_by{ |lib| lib.category }
+    @libraries = @libraries.includes(:category).group_by{ |lib| lib.category }
 
   end
 end
