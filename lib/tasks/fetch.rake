@@ -19,9 +19,9 @@ task fetch: :environment do
     description = line.split(") - ").second.to_s
     category_id = @category.id
     @library = Library.find_or_create_by(name: name,
-    url: url,
-    description: description,
-    category_id: category_id)
+      url: url,
+      description: description,
+      category_id: category_id)
   end
 
   fetch_readme.split("\n").each do |line|
